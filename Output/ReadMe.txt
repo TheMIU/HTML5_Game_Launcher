@@ -4,6 +4,9 @@
 | how the HTML5 Game Launcher works. |
 **************************************
 
+To conver JAR to EXE : https://genuinecoder.com/online-converter/jar-to-exe/
+
+
 About the game;
 Ghost Hunter - Save the Girl
 
