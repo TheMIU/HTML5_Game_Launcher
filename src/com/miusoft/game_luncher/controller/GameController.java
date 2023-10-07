@@ -1,10 +1,10 @@
-package com.miusoft.ghosthunter.controller;
+package com.miusoft.game_luncher.controller;
 
+import com.miusoft.game_luncher.GetDirectoryPath;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.StackPane;
 import javafx.scene.web.WebEngine;
@@ -12,17 +12,14 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import java.io.InputStream;
-
 public class GameController {
-    @FXML
-    private WebView gameView;
-    @FXML
-    private Button btnLoad;
-
-
-
+    /**
+     * Replace '\Output\game\index.html'
+     * with the appropriate path for your application.
+     */
     String dir = GetDirectoryPath.getDirPath();
+    String htmlFilePath = "file:///" + dir + "\\Output\\game\\index.html";
+
 
     @FXML
     void loadOnClick(ActionEvent event) {
@@ -33,14 +30,13 @@ public class GameController {
 
         WebView webView = new WebView();
         WebEngine engine = webView.getEngine();
-        String htmlFilePath = "file:///" + dir + "\\game\\index.html";
         engine.load(htmlFilePath);
 
         StackPane stackPane = new StackPane(webView);
         Scene gameScene = new Scene(stackPane);
         gameStage.setScene(gameScene);
 
-        // close the application when "Escape" is pressed
+        // close the application when "ESC" key is pressed
         gameScene.setOnKeyPressed(keyEvent -> {
             if (keyEvent.getCode() == KeyCode.ESCAPE) {
                 gameStage.close();

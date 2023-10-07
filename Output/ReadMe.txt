@@ -1,3 +1,10 @@
+
+**************************************
+| This is an example to demonstrate  |
+| how the HTML5 Game Launcher works. |
+**************************************
+
+About the game;
 Ghost Hunter - Save the Girl
 
 👻 Double-click "GhostHunterLauncher.jar" to launch the application. 👻
