@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+<section id="start">
+    <div class="container">
+        <img id="Title" src="assets/images/Title.png">
+        <button id="btnPlay" class="horror-button">Fight</button>
+    </div>
+</section>
+
+<section id="game">
+    <div id="enemyContainer"></div>
+    <div class="target"></div>
+
+    <div id="status">
+        <h4><span style="font-weight: bolder ; color: #ff4300;" id="level">Level 1</span></h4>
+        <h4 style="color: #ef9a44">Kills: <span id="score">0</span></h4>
+    </div>
+</section>
+
+<section id="failed">
+    <div class="container">
+        <img id="GhostGirl" src="assets/images/ghostGirl.png">
+        <H2 id="result" style="font-weight: normal;padding: 0; color: #c40000">You killed 0 Ghosts</H2>
+        <H2 style="font-weight: normal;padding: 0; color: #ffffff">You tried to save me, But you are failed</H2>
+        <button id="btnRestart" class="horror-button">Try again</button>
+    </div>
+</section>
+
+<div id="loader">
+    <img src="assets/images/ghostfly.gif" alt="Loading">
+</div>
+
+<script src="assets/js/Loader.js"></script>
+<script src="assets/js/SoundManager.js"></script>
+<script src="assets/js/MenuUIHandler.js"></script>
+<script src="assets/js/GameLogic.js"></script>
+
+</body>
+</html>
