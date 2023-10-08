@@ -1,5 +1,6 @@
 # HTML5_Game_Luncher
 Game launcher for playing HTML5 games without a browser
+<img src="https://github.com/TheMIU/HTML5_Game_Launcher/blob/main/preview.png">
 
 🔗 Download example made with this : [Ghost Hunter](https://github.com/TheMIU/JS-Game/raw/main/exe/Ghost%20Hunter%20Setup.exe)
 
