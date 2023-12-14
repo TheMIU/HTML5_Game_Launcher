@@ -1,4 +1,4 @@
-# HTML5_Game_Luncher
+# HTML5_Game_Launcher
 Game Launcher for playing HTML5 games without a browser
 <img src="https://github.com/TheMIU/HTML5_Game_Launcher/blob/main/preview.png">
 
